@@ -95,4 +95,68 @@ console.log(fruitsAndVegetables); // ['apple', 'orange', 'banana', 'broccoli', '
 // const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
 // Your code here
+
 const controversialPizzaToppings = [...pizzaToppings];
+
+console.log(controversialPizzaToppings);
+
+  // --------- EXERCISE 5 -----------------
+
+  // Duplicate the following object and spread its values into a new variable `myCar`.
+
+// const car = {
+//     make: 'Audi',
+//     model: 'q5',
+//   };
+  
+  // Change the `model` property of `myCar` to 'q7'. Log both objects.
+  
+  // Your code here
+
+  const myCar = {...car};
+  myCar.model = 'q7';
+
+  console.log(myCar.make);
+  console.log(myCar.model);
+
+  // --------- EXERCISE 6 -----------------
+
+  // Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+
+// Create an object named userProfile. 
+// Define a variable named propertyName and assign a string to it (like a username, age, or email). 
+// Use propertyName as a dynamic key in userProfile, assigning a relevant value.
+
+// Your code here
+
+const propertyName = 'Username';
+
+const userProfile = {
+    [propertyName]: 'Tcrite19'
+}
+
+console.log(userProfile);
+
+// --------- EXERCISE 7 -----------------
+
+// --------- EXERCISE 8 -----------------
+
+// Create a function that takes two parameters, `noun` and `adjective`, both with the following respective default values:
+
+// 1. `cat`
+
+// 2. `white`
+
+// The function should log a sentence 'The cat is white.' by default. The function should substitute the appropriate parameters when supplied arguments.
+
+// Your code here
+
+function animals(noun = 'cat', adjective = 'white') {
+    console.log(`The ${noun} is ${adjective}`)
+}
+
+console.log(animals('dog', 'black'));
